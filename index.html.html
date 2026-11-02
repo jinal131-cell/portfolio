@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Jinal Zalavadiya — Business Information Systems student">
+<title>Jinal Zalavadiya | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+:root{--bg:#000;--panel:#161616;--line:#2a2a2a;--text:#fff;--muted:#9a9a9a;--gold:#ffbd39}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:80px}body{background:var(--bg);color:var(--text);font-family:Poppins,sans-serif;line-height:1.7;overflow-x:hidden}a{color:inherit;text-decoration:none}ul{list-style:none}.wrap{width:min(1000px,90%);margin:auto}
+#bar{position:fixed;top:0;left:0;right:0;height:3px;z-index:30;pointer-events:none}#bar i{display:block;height:100%;background:var(--gold);transform:scaleX(0);transform-origin:left}
+nav{position:sticky;top:0;z-index:20;background:#000d;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff10}.nav{height:70px;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800;font-size:1.1rem;letter-spacing:.3px;white-space:nowrap}.links{display:flex;gap:26px}.links a{font-size:.85rem;position:relative;transition:color .2s}.links a:hover,.links a.on{color:var(--gold)}.links a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s}.links a.on::after{transform:scaleX(1)}#menu{display:none;background:none;border:1px solid var(--line);color:#fff;padding:7px 10px;border-radius:6px}
+section{padding:90px 0}.hero{position:relative;min-height:88vh;display:flex;align-items:center;padding:40px 0}#particles{position:absolute;inset:0;pointer-events:none}#particles canvas{display:block}.hero .wrap{position:relative;z-index:1}#glow{position:fixed;top:0;left:0;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;pointer-events:none;z-index:0;opacity:0;background:radial-gradient(circle,#ffbd3914,transparent 65%);transition:opacity .4s,transform .15s ease-out}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center;width:100%}.sub{font-size:.75rem;letter-spacing:3px;color:var(--gold);font-weight:700;text-transform:uppercase}h1{font-size:clamp(1.5rem,4.2vw,2.7rem);white-space:nowrap;line-height:1.15;margin:14px 0;font-weight:800}h1 span{background:linear-gradient(90deg,#ffbd39,#ffe6a8,#ffbd39);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 5s linear infinite}.role{white-space:nowrap;font-size:clamp(.95rem,3.6vw,1.3rem);font-weight:600;min-height:2em}.caret{display:inline-block;width:2px;height:1.1em;background:var(--gold);margin-left:3px;vertical-align:-.15em;animation:blink 1s steps(1) infinite}.lead{color:var(--muted);max-width:520px;font-size:.92rem;margin-top:6px}
+.hero-copy>*{animation:up .8s cubic-bezier(.2,.7,.2,1) both}.hero-copy>:nth-child(2){animation-delay:.1s}.hero-copy>:nth-child(3){animation-delay:.2s}.hero-copy>:nth-child(4){animation-delay:.3s}.hero-copy>:nth-child(5){animation-delay:.4s}
+.photo{position:relative;justify-self:center;width:min(310px,100%);aspect-ratio:4/5;border-radius:160px 160px 20px 20px;animation:float 6s ease-in-out infinite,glow 4s ease-in-out infinite}.photo .in{width:100%;height:100%;border:1px solid #343741;border-radius:inherit;overflow:hidden;background:#111319;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:.85rem;animation:up 1s .3s both}.photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block;transition:transform 1.2s,opacity .8s}.photo:hover img{transform:scale(1.05)}.photo .ph{padding:25px}.photo .ph i{font-size:3.5rem;color:var(--gold);display:block;margin-bottom:12px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;gap:8px;align-items:center;padding:11px 22px;border-radius:30px;background:var(--gold);color:#17130a;font-weight:600;font-size:.85rem;border:1px solid var(--gold);transition:.2s}.btn:hover{transform:translateY(-3px);box-shadow:0 8px 22px #ffbd3944}.btn.o{background:transparent;color:#fff;border-color:#464954}.btn.o:hover{border-color:var(--gold);color:var(--gold)}
+.heading{position:relative;text-align:center;margin-bottom:46px}.heading h2{position:relative;z-index:1;font-size:clamp(1.8rem,4vw,2.5rem);font-weight:700}.ghost{position:absolute;left:50%;top:50%;transform:translate(calc(-50% + var(--px,0px)),-50%);font-size:clamp(3.5rem,12vw,8.5rem);font-weight:800;color:#ffffff1c;white-space:nowrap;pointer-events:none}.heading p{position:relative;z-index:1;color:var(--muted);font-size:.9rem;margin:8px auto 0;max-width:600px}
+.two{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px}.info li{display:grid;grid-template-columns:100px 1fr;gap:10px;font-size:.85rem;margin-bottom:12px}.info b{font-weight:600}.info span{color:var(--muted);overflow-wrap:anywhere}.info a{color:var(--gold)}.about p{color:var(--muted);font-size:.9rem;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.tag{font-size:.78rem;color:#f5d99c;border:1px solid #59462a;background:#1c1912;border-radius:5px;padding:5px 10px;transition:.2s}.tag:hover{background:#2a2414;transform:translateY(-2px)}.count{margin:6px 0 18px;font-weight:600}.count em{font-style:normal;color:var(--gold);font-size:1.6rem}
+.card{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:24px;height:100%;transition:transform .15s ease-out,border-color .25s;will-change:transform}.card:hover{border-color:#6b5320}.card::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),#ffbd3920,transparent 60%)}.card:hover::after{opacity:1}.card>i.ic{font-size:1.5rem;color:var(--gold);margin-bottom:12px;display:inline-block;transition:transform .4s}.card:hover>i.ic{transform:rotate(-12deg) scale(1.2)}.date,.type{color:var(--gold);font-weight:700;font-size:.8rem;letter-spacing:1px;text-transform:uppercase}.card h3{font-size:1.05rem;font-weight:600;margin:4px 0 6px}.place{font-size:.8rem;color:#d4d4d8}.card p,.card li{font-size:.85rem;color:var(--muted)}.card ul{list-style:disc;padding-left:18px;margin-top:10px}.card p{margin-top:8px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.edu{max-width:760px;margin:auto}.edu .card{border-left:3px solid var(--gold)}
+.contact{text-align:center}.contact h3{font-size:1.4rem;font-weight:500;margin-bottom:8px}.contact>p{color:var(--muted);font-size:.9rem;margin-bottom:22px}.contact .btns{justify-content:center}.soc{display:flex;justify-content:center;gap:12px;margin-top:26px}.soc a{width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#1a1a1a;color:var(--gold);transition:.25s}.soc a:hover{transform:translateY(-4px) scale(1.12);background:var(--gold);color:#000}
+footer{text-align:center;padding:26px;border-top:1px solid var(--line);font-size:.8rem;color:#777}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s var(--d,0ms),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}.rv.in{opacity:1;transform:none}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}@keyframes blink{50%{opacity:0}}@keyframes shine{to{background-position:-200% 0}}@keyframes float{50%{transform:translateY(-12px)}}@keyframes glow{50%{box-shadow:0 0 50px #ffbd3922}}
+@media(max-width:780px){.hero-grid,.two{grid-template-columns:1fr}.hero-copy{text-align:center}.lead{margin-inline:auto}.btns{justify-content:center}.photo{grid-row:1;width:230px}.grid3{grid-template-columns:1fr 1fr}#menu{display:block}.links{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;gap:12px;padding:20px 5%;background:#050505}.links.open{display:flex;animation:up .3s both}}
+@media(max-width:560px){.grid3,.grid2{grid-template-columns:1fr}.info li{grid-template-columns:1fr;gap:0}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script>
+const {useState,useEffect,useRef}=React,h=React.createElement;
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,hover=matchMedia("(hover:hover)").matches;
+
+/* ---------- content (edit here) ---------- */
+const EMAIL="jinalzalavadiya131@gmail.com",LI="https://www.linkedin.com/in/jinal-mukeshbhai-zalavadiya-41208a364/",GH="https://github.com/jinal131-cell";
+const NAV=[["home","Home"],["about","About"],["interests","Interests"],["education","Education"],["projects","Projects"],["contact","Contact"]];
+const ROLES=["Business Information Systems Student","Exploring ERP & Enterprise Systems","Learning Software Development","Interested in Data & Business Processes"];
+const INFO=[["Name","Jinal Zalavadiya"],["Study","B.Sc. Business Information Systems"],["University","Hochschule Furtwangen"],["Semester","5th semester"],["Location","Germany"]];
+const TAGS=["ERP & Enterprise Systems","Software Development","Business Processes","Data & Analytics"];
+const INTERESTS=[["gears","ERP & Enterprise Systems","Understanding how systems such as SAP support business operations, information flow, and integrated processes."],["code","Software Development","Building a foundation in programming, web technologies, software engineering, and problem-solving."],["database","Databases","Learning how business information is organised, queried, and managed using database concepts."],["chart-line","Data Science & Analytics","Exploring how data analysis and machine learning can support better business decisions."],["diagram-project","Business Processes","Mapping workflows, collaborating in teams, and considering how processes can be improved."],["cloud","Cloud & Mobile Applications","Learning about modern application platforms and how digital services are delivered."]];
+const PROJ=[["table-columns","University team practice","Kanban Board Setup","A team workflow board created in a university practice project to organise tasks and make progress visible.",["Organised work into Backlog, Todo, Doing, Done, and Archive.","Used a visual workflow to support team coordination."]],["people-group","University team practice","Team Charter","A team agreement documenting shared expectations and ways of working for a group project.",["Outlined team rules and communication expectations.","Prepared the charter for team review and signatures."]],["laptop-code","Learning direction","Software Development","A developing area of interest connected to programming, web technologies, and software engineering coursework.",["Project examples can be added when completed.","Code and documentation can be linked from GitHub."]],["building","Learning direction","ERP & Business Systems","An area of interest focused on how enterprise systems connect data, people, and business processes.",["Exploring ERP concepts and integrated workflows.","Practical examples can be added as experience grows."]]];
+
+/* ---------- hooks & helpers ---------- */
+function useInView(th=.15){
+  const r=useRef(),[v,s]=useState(false);
+  useEffect(()=>{const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){s(true);o.disconnect()}},{threshold:th});o.observe(r.current);return()=>o.disconnect()},[]);
+  return[r,v];
+}
+function R({d=0,className="",children}){const [r,v]=useInView();return h("div",{ref:r,className:"rv "+(v?"in ":"")+className,style:{"--d":d+"ms"}},children)}
+function Card({className="",children}){
+  const r=useRef();
+  useEffect(()=>{
+    if(reduce||!hover)return;const c=r.current;
+    const mv=e=>{const b=c.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;c.style.setProperty("--mx",(x+.5)*100+"%");c.style.setProperty("--my",(y+.5)*100+"%");c.style.transform="perspective(800px) rotateX("+-y*7+"deg) rotateY("+x*7+"deg) translateY(-4px)"};
+    const lv=()=>{c.style.transform=""};
+    c.addEventListener("pointermove",mv);c.addEventListener("pointerleave",lv);
+    return()=>{c.removeEventListener("pointermove",mv);c.removeEventListener("pointerleave",lv)};
+  },[]);
+  return h("div",{ref:r,className:"card "+className},children);
+}
+const Icon=n=>h("i",{className:"ic fa-solid fa-"+n});
+
+/* ---------- pieces ---------- */
+function Progress(){
+  const r=useRef();
+  useEffect(()=>{const f=()=>{const d=document.documentElement;r.current.style.transform="scaleX("+scrollY/Math.max(1,d.scrollHeight-innerHeight)+")"};f();addEventListener("scroll",f,{passive:true});return()=>removeEventListener("scroll",f)},[]);
+  return h("div",{id:"bar"},h("i",{ref:r}));
+}
+function Nav(){
+  const [open,setOpen]=useState(false),[on,setOn]=useState("home");
+  useEffect(()=>{
+    const o=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&setOn(e.target.id)),{rootMargin:"-45% 0px -50% 0px"});
+    NAV.forEach(([id])=>o.observe(document.getElementById(id)));return()=>o.disconnect();
+  },[]);
+  return h("nav",null,h("div",{className:"wrap nav"},
+    h("a",{className:"brand",href:"#home"},"Jinal Zalavadiya"),
+    h("button",{id:"menu","aria-expanded":open,onClick:()=>setOpen(!open)},"☰ Menu"),
+    h("div",{className:"links"+(open?" open":"")},NAV.map(([id,t])=>h("a",{key:id,href:"#"+id,className:on===id?"on":"",onClick:()=>setOpen(false)},t)))));
+}
+function Typewriter(){
+  const [t,setT]=useState(reduce?ROLES[0]:"");
+  useEffect(()=>{
+    if(reduce)return;let ri=0,ci=0,del=false,id;
+    const tick=()=>{const s=ROLES[ri];setT(s.slice(0,ci));
+      if(!del&&ci<s.length){ci++;id=setTimeout(tick,65)}else if(!del){del=true;id=setTimeout(tick,1300)}
+      else if(ci>0){ci--;id=setTimeout(tick,28)}else{del=false;ri=(ri+1)%ROLES.length;id=setTimeout(tick,300)}};
+    tick();return()=>clearTimeout(id);
+  },[]);
+  return h("div",{className:"role"},t,h("span",{className:"caret"}));
+}
+function Heading({big,title,sub}){
+  const r=useRef();
+  useEffect(()=>{
+    if(reduce)return;const g=r.current.firstChild;
+    const f=()=>{const b=r.current.getBoundingClientRect();g.style.setProperty("--px",((b.top/innerHeight)-.5)*-90+"px")};
+    f();addEventListener("scroll",f,{passive:true});return()=>removeEventListener("scroll",f);
+  },[]);
+  return h(R,null,h("div",{className:"heading",ref:r},h("span",{className:"ghost","aria-hidden":true},big),h("h2",null,title),sub&&h("p",null,sub)));
+}
+function Counter({to}){
+  const [r,v]=useInView(),[n,setN]=useState(reduce?to:0);
+  useEffect(()=>{if(!v||reduce)return;let s,id;const f=t=>{s=s||t;const p=Math.min(1,(t-s)/1200);setN(Math.round(to*(1-Math.pow(1-p,3))));if(p<1)id=requestAnimationFrame(f)};id=requestAnimationFrame(f);return()=>cancelAnimationFrame(id)},[v]);
+  return h("p",{ref:r,className:"count"},h("em",null,n),["th","st","nd","rd","th","th"][n]+" semester and counting");
+}
+function Portrait(){
+  const [s,set]=useState("load");
+  return h("div",{className:"photo"},h("div",{className:"in"},s==="err"
+    ?h("div",{className:"ph"},h("i",{className:"fa-regular fa-user"}),"Save your photo as jinal-portrait.png beside this HTML file.")
+    :h("img",{src:"./jinal-portrait.png",alt:"Portrait of Jinal Zalavadiya",style:{opacity:s==="ok"?1:0},onLoad:()=>set("ok"),onError:()=>set("err")})));
+}
+
+/* Hero particle network that reacts to the cursor */
+function Particles(){
+  const c=useRef();
+  useEffect(()=>{
+    if(reduce)return;const cv=c.current,x=cv.getContext&&cv.getContext("2d");if(!x)return;
+    let w,ht,ps=[],m={x:-999,y:-999},id;
+    const size=()=>{const r=cv.parentElement.getBoundingClientRect();w=cv.width=r.width;ht=cv.height=r.height;
+      ps=Array.from({length:Math.min(60,Math.floor(w/18))},()=>({x:Math.random()*w,y:Math.random()*ht,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}))};
+    const mv=e=>{const r=cv.getBoundingClientRect();m={x:e.clientX-r.left,y:e.clientY-r.top}};
+    const draw=()=>{x.clearRect(0,0,w,ht);
+      ps.forEach((p,i)=>{p.x=(p.x+p.vx+w)%w;p.y=(p.y+p.vy+ht)%ht;
+        if(Math.hypot(p.x-m.x,p.y-m.y)<150){p.x+=(p.x-m.x)*.012;p.y+=(p.y-m.y)*.012}
+        x.fillStyle="rgba(255,189,57,.6)";x.beginPath();x.arc(p.x,p.y,1.6,0,7);x.fill();
+        for(let j=i+1;j<ps.length;j++){const q=ps[j],d=Math.hypot(p.x-q.x,p.y-q.y);
+          if(d<120){x.strokeStyle="rgba(255,189,57,"+.18*(1-d/120)+")";x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}});
+      id=requestAnimationFrame(draw)};
+    size();draw();addEventListener("resize",size);addEventListener("pointermove",mv);
+    return()=>{cancelAnimationFrame(id);removeEventListener("resize",size);removeEventListener("pointermove",mv)};
+  },[]);
+  return h("div",{id:"particles"},h("canvas",{ref:c}));
+}
+/* Soft light that follows the cursor (mouse devices only) */
+function Glow(){
+  const r=useRef();
+  useEffect(()=>{
+    if(reduce||!hover)return;const g=r.current;
+    const mv=e=>{g.style.opacity=1;g.style.transform="translate("+e.clientX+"px,"+e.clientY+"px)"},lv=()=>{g.style.opacity=0};
+    addEventListener("pointermove",mv);document.addEventListener("pointerleave",lv);
+    return()=>{removeEventListener("pointermove",mv);document.removeEventListener("pointerleave",lv)};
+  },[]);
+  return h("div",{id:"glow",ref:r});
+}
+
+/* ---------- page ---------- */
+function App(){
+  return h(React.Fragment,null,h(Progress),h(Glow),h(Nav),h("main",null,
+    h("section",{className:"hero",id:"home"},h(Particles),h("div",{className:"wrap hero-grid"},
+      h("div",{className:"hero-copy"},h("div",{className:"sub"},"Hello, welcome to my portfolio"),h("h1",null,"I'm ",h("span",null,"Jinal Zalavadiya")),h(Typewriter),
+        h("p",{className:"lead"},"I’m studying Business Information Systems at Hochschule Furtwangen in Germany. I’m interested in how software, data, and enterprise systems can solve real business problems."),
+        h("div",{className:"btns",style:{marginTop:22}},h("a",{className:"btn",href:"#projects"},"Explore my work ",h("i",{className:"fa-solid fa-arrow-right"})),h("a",{className:"btn o",href:"#contact"},"Contact me"))),
+      h(Portrait))),
+    h("section",{id:"about"},h("div",{className:"wrap"},h(Heading,{big:"About",title:"About Me",sub:"Connecting business needs with technology and practical problem-solving."}),
+      h("div",{className:"two"},
+        h(R,null,h(Card,null,h("h3",{style:{marginBottom:16}},"Personal details"),h("ul",{className:"info"},INFO.map(([k,v])=>h("li",{key:k},h("b",null,k),h("span",null,v))),
+          h("li",null,h("b",null,"Email"),h("span",null,h("a",{href:"mailto:"+EMAIL},EMAIL)))))),
+        h(R,{d:120,className:"about"},
+          h("p",null,"I’m a Business Information Systems student exploring the relationship between software development, enterprise resource planning (ERP), data, and business processes."),
+          h("p",null,"I’m still discovering which direction suits me best, so I’m building a broad foundation across technical and business topics. I enjoy learning how digital tools can make processes clearer, more efficient, and easier for people to use."),
+          h("p",null,"This portfolio presents my academic background, current learning interests, and university project work. It will grow as I gain more practical experience."),
+          h("div",{className:"tags"},TAGS.map(t=>h("span",{key:t,className:"tag"},t))),
+          h(Counter,{to:5}),
+          h("div",{className:"btns"},h("a",{className:"btn",target:"_blank",rel:"noopener",href:LI},h("i",{className:"fa-brands fa-linkedin-in"})," LinkedIn"),h("a",{className:"btn o",target:"_blank",rel:"noopener",href:GH},h("i",{className:"fa-brands fa-github"})," GitHub")))))),
+    h("section",{id:"interests"},h("div",{className:"wrap"},h(Heading,{big:"Interests",title:"Interests & Learning Areas",sub:"Areas connected to my degree that I’m learning about and want to develop further."}),
+      h("div",{className:"grid3"},INTERESTS.map(([i,t,p],k)=>h(R,{key:t,d:k%3*110},h(Card,null,Icon(i),h("h3",null,t),h("p",null,p))))))),
+    h("section",{id:"education"},h("div",{className:"wrap"},h(Heading,{big:"Education",title:"Education",sub:"My current degree and the subjects shaping my interests."}),
+      h(R,{className:"edu"},h(Card,null,h("div",{className:"date"},"Current · 5th semester"),h("h3",null,"Bachelor of Science in Business Information Systems"),h("div",{className:"place"},"Hochschule Furtwangen (Furtwangen University), Germany"),
+        h("p",null,"Coursework includes Cloud and Mobile Applications, Software Engineering, Business Operations and Logistics, and Data Science and Machine Learning in Business. Other study areas include databases, web technologies, ERP systems, and business processes."))))),
+    h("section",{id:"projects"},h("div",{className:"wrap"},h(Heading,{big:"Projects",title:"Projects & Practice",sub:"A starting point for documenting coursework and team deliverables. More projects will be added as they are completed."}),
+      h("div",{className:"grid2"},PROJ.map(([i,ty,t,p,l],k)=>h(R,{key:t,d:k%2*120},h(Card,null,Icon(i),h("div",{className:"type"},ty),h("h3",null,t),h("p",null,p),h("ul",null,l.map(x=>h("li",{key:x},x))))))))),
+    h("section",{id:"contact"},h("div",{className:"wrap"},h(Heading,{big:"Contact",title:"Contact",sub:"Interested in connecting about Business Information Systems, software, ERP, or student projects?"}),
+      h(R,{className:"contact"},h("h3",null,"Have a question or an opportunity?"),h("p",null,"Feel free to reach out by email or connect with me on LinkedIn and GitHub."),
+        h("div",{className:"btns"},h("a",{className:"btn",href:"mailto:"+EMAIL+"?subject=Hello%20Jinal"},h("i",{className:"fa-regular fa-envelope"})," Email me")),
+        h("div",{className:"soc"},
+          h("a",{href:"mailto:"+EMAIL,"aria-label":"Email"},h("i",{className:"fa-regular fa-envelope"})),
+          h("a",{href:LI,target:"_blank",rel:"noopener","aria-label":"LinkedIn"},h("i",{className:"fa-brands fa-linkedin-in"})),
+          h("a",{href:GH,target:"_blank",rel:"noopener","aria-label":"GitHub"},h("i",{className:"fa-brands fa-github"}))))))),
+    h("footer",null,"© "+new Date().getFullYear()+" Jinal Zalavadiya · Built with curiosity and a love for learning."));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(h(App));
+</script>
+</body>
+</html>
