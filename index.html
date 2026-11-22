@@ -39,6 +39,7 @@ const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,hover=matchM
 
 /* ---------- content (edit here) ---------- */
 const EMAIL="jinalzalavadiya131@gmail.com",LI="https://www.linkedin.com/in/jinal-mukeshbhai-zalavadiya-41208a364/";
+const PHONE="+4915563170126";
 const NAV=[["home","Home"],["about","About"],["interests","Interests"],["education","Education"],["projects","Projects"],["contact","Contact"]];
 const ROLES=["Business Information Systems Student","Exploring ERP & Enterprise Systems","Learning Software Development","Interested in Data & Business Processes"];
 const INFO=[["Name","Jinal Zalavadiya"],["Study","B.Sc. Business Information Systems"],["University","Hochschule Furtwangen"],["Semester","5th semester"],["Location","Germany"]];
@@ -175,10 +176,11 @@ function App(){
     h("section",{id:"projects"},h("div",{className:"wrap"},h(Heading,{big:"Projects",title:"Projects & Practice",sub:"A starting point for documenting coursework and team deliverables. More projects will be added as they are completed."}),
       h("div",{className:"grid2"},PROJ.map(([i,ty,t,p,l],k)=>h(R,{key:t,d:k%2*120},h(Card,null,Icon(i),h("div",{className:"type"},ty),h("h3",null,t),h("p",null,p),h("ul",null,l.map(x=>h("li",{key:x},x))))))))),
     h("section",{id:"contact"},h("div",{className:"wrap"},h(Heading,{big:"Contact",title:"Contact",sub:"Interested in connecting about Business Information Systems, software, ERP, or student projects?"}),
-      h(R,{className:"contact"},h("h3",null,"Have a question or an opportunity?"),h("p",null,"Feel free to reach out by email or connect with me on LinkedIn."),
+      h(R,{className:"contact"},h("h3",null,"Have a question or an opportunity?"),h("p",null,"Feel free to reach out by email, phone, or connect with me on LinkedIn."),
         h("div",{className:"btns"},h("a",{className:"btn",href:"mailto:"+EMAIL+"?subject=Hello%20Jinal"},h("i",{className:"fa-regular fa-envelope"})," Email me")),
         h("div",{className:"soc"},
           h("a",{href:"mailto:"+EMAIL,"aria-label":"Email"},h("i",{className:"fa-regular fa-envelope"})),
+          h("a",{href:"tel:"+PHONE,"aria-label":"Phone"},h("i",{className:"fa-solid fa-phone"})),
           h("a",{href:LI,target:"_blank",rel:"noopener","aria-label":"LinkedIn"},h("i",{className:"fa-brands fa-linkedin-in"}))))))),
     h("footer",null,"© "+new Date().getFullYear()+" Jinal Zalavadiya · Built with curiosity and a love for learning."));
 }
